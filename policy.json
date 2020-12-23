@@ -42,7 +42,7 @@
                 },                  
                 {
                   "field": "type",
-                  "in": [ "Microsoft.Sql/servers/databases", "Microsoft.Insights/ActionGroups", "Microsoft.Insights/Components", "Microsoft.Resources/deployments", "Microsoft.Web/sites/config", "Microsoft.Web/sites/hostNameBindings", "Microsoft.Authorization/roleAssignments", "Microsoft.Sql/servers", "Microsoft.Web/serverFarms", "Microsoft.Web/sites" ]
+                  "in": [ "Microsoft.Sql/servers/databases", "Microsoft.Insights/ActionGroups", "Microsoft.Insights/Components", "Microsoft.Resources/deployments", "Microsoft.Web/sites/config", "Microsoft.Web/sites/hostNameBindings", "Microsoft.Sql/servers", "Microsoft.Web/serverFarms", "Microsoft.Web/sites" ]
                 }
             ]
           }
