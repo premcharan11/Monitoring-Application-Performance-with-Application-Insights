@@ -6,10 +6,6 @@
             "anyOf": [
                 {
                   "field": "type",
-                  "like": "Microsoft.Authorization/roleAssignments"
-                },
-                {
-                  "field": "type",
                   "like": "Microsoft.Sql/servers"
                 },
                 {
