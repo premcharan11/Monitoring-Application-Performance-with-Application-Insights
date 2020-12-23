@@ -7,7 +7,7 @@
         "Microsoft.Authorization/*/read",
         "Microsoft.Resources/deployments/*",
         "Microsoft.Resources/subscriptions/resourceGroups/read",
-        "Microsoft.Authorization/roleAssignments/read",
+        "Microsoft.Authorization/roleAssignments/write",
         "Microsoft.Web/serverFarms/*",
         "Microsoft.Sql/servers/*",
         "Microsoft.Sql/servers/databases/*",
