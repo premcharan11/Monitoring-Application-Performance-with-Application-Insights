@@ -52,54 +52,41 @@
         }
       },
       {
-        "allof":[
-          {
-          "field": "type",
-          "equals": "Microsoft.SQL/servers/databases"
-        },
-        {
-          "not":{
-             "field": "Microsoft.Sql/servers/databases/requestedServiceObjectiveName",
-             "in": ["S1"]
-           }
-        }
-        ]
-      },      
-      {
         "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.Sql/servers/databases"
+          },
+          {
+            "not": {
+              "allOf": [
+                {
+                  "field": "Microsoft.Sql/servers/databases/sku.name",
+                  "in": [ "GP_Gen5_2" ]
+                },
+                {
+                  "field": "Microsoft.Sql/servers/databases/sku.tier",
+                  "in": [ "GeneralPurpose" ]
+                }
+              ]
+            }
+          }
+        ]
+      },     
+      {
+        "allof": [
           {
             "field": "type",
             "equals": "Microsoft.Web/serverfarms"
           },
           {
             "not": {
-              "allOf": [
-                {
-                  "field": "Microsoft.Web/serverfarms/sku.name",
-                  "in": [ "B1" ]
-                },
-                {
-                  "field": "Microsoft.Web/serverfarms/sku.tier",
-                  "in": [ "Basic" ]
-                },
-                {
-                  "field": "Microsoft.Web/serverfarms/sku.family",
-                  "in": [ "B" ]
-                },
-                {
-                  "field": "Microsoft.Web/serverfarms/sku.capacity",
-                  "in": [ "1" ]
-                },
-                {
-                  "field": "Microsoft.Web/serverfarms/sku.size",
-                  "in": [ "B1" ]
-                }                                
-              ]
+              "field": "Microsoft.Web/serverfarms/sku.name",
+              "in": [ "S1" ]
             }
           }
         ]
-      }      
-
+      }
     ]
   },
   "then": {
