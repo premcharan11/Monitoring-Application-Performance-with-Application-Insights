@@ -60,7 +60,7 @@
         {
           "not":{
              "field": "Microsoft.Sql/servers/databases/requestedServiceObjectiveName",
-             "in": ["S0"]
+             "in": ["S1"]
            }
         }
         ]
