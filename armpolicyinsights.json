@@ -67,7 +67,7 @@
                 {
                   "field": "Microsoft.Sql/servers/databases/sku.tier",
                   "in": [ "Free" ]
-                }
+                },
                 {
                   "field": "Microsoft.Sql/servers/databases/sku.capacity",
                   "in": [ "5" ]
