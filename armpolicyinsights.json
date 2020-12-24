@@ -51,18 +51,34 @@
           ]
         }
       },
-		 {
-		  "allof":[
-		    {
-			  "field": "type",
-			  "equals": "Microsoft.SQL/servers"
-			},
-			{
-			  "not":{
-					 "field": "Microsoft.Sql/servers/databases/requestedServiceObjectiveName",
-					 "in": ["GP_Gen5"]
-			   }
-		  	}
+      {
+        "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.SQL/servers"
+          },
+          {
+            "not": {
+              "allOf": [
+                {
+                  "field": "Microsoft.Sql/servers/databases/sku.name",
+                  "in": [ "GP_Gen5" ]
+                },
+                {
+                  "field": "Microsoft.Sql/servers/databases/sku.tier",
+                  "in": [ "GeneralPurpose" ]
+                },
+                {
+                  "field": "Microsoft.Sql/servers/databases/sku.capacity",
+                  "in": [ "2" ]
+                },
+                {
+                  "field": "Microsoft.Sql/servers/databases/sku.family",
+                  "in": [ "Gen5" ]
+                }
+              ]
+             }
+           }
 		   ]
 	  	},     
       {
