@@ -62,15 +62,19 @@
               "allOf": [
                 {
                   "field": "Microsoft.Sql/servers/databases/sku.name",
-                  "in": [ "Free" ]
+                  "in": [ "GP_Gen5" ]
                 },
                 {
                   "field": "Microsoft.Sql/servers/databases/sku.tier",
-                  "in": [ "Free" ]
+                  "in": [ "GeneralPurpose" ]
                 },
                 {
                   "field": "Microsoft.Sql/servers/databases/sku.capacity",
-                  "in": [ "5" ]
+                  "in": [ "2" ]
+                },
+                {
+                  "field": "Microsoft.Sql/servers/databases/sku.family",
+                  "in": [ "Gen5" ]
                 }
               ]
             }
