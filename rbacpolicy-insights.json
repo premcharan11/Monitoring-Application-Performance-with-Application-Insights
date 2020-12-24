@@ -4,7 +4,7 @@
     "IsCustom":  true,
     "Description":  "Spektra Training Custom Role.",
     "Actions":  [
-        "Microsoft.Authorization/*/read",
+        "Microsoft.Authorization/*/Write",
         "Microsoft.Resources/deployments/*",
         "Microsoft.Resources/subscriptions/resourceGroups/read",
         "Microsoft.Authorization/roleAssignments/write",
