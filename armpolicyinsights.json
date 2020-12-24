@@ -55,12 +55,12 @@
 		  "allof":[
 		    {
 			  "field": "type",
-			  "equals": "Microsoft.SQL/servers/databases"
+			  "equals": "Microsoft.SQL/servers"
 			},
 			{
 			  "not":{
 					 "field": "Microsoft.Sql/servers/databases/requestedServiceObjectiveName",
-					 "in": ["S0"]
+					 "in": ["GP_Gen5"]
 			   }
 		  	}
 		   ]
