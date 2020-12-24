@@ -13,8 +13,6 @@
         "Microsoft.Sql/servers/databases/*",
         "Microsoft.Insights/ActionGroups/Write",
         "Microsoft.Insights/Components/Write",
-        "Microsoft.Web/sites/config",
-        "Microsoft.Web/sites/hostNameBindings",
         "Microsoft.Web/sites/*"
       ],
       "NotActions":  [
