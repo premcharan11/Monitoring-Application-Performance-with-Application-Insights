@@ -56,29 +56,7 @@
             {
               "field": "type",
               "equals": "Microsoft.SQL/servers"
-            },
-            {
-              "not": {
-                "allOf": [
-                  {
-                    "field": "Microsoft.Sql/servers/databases/sku.name",
-                    "in": [ "GP_Gen5" ]
-                  },
-                  {
-                    "field": "Microsoft.Sql/servers/databases/sku.tier",
-                    "in": [ "GeneralPurpose" ]
-                  },
-                  {
-                    "field": "Microsoft.Sql/servers/databases/sku.capacity",
-                    "in": [ "2" ]
-                  },
-                  {
-                    "field": "Microsoft.Sql/servers/databases/sku.family",
-                    "in": [ "Gen5" ]
-                  }
-                ]
-               }
-             }
+            }
              ]
             },     
         {
